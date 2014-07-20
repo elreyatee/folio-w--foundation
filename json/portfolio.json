@@ -1,0 +1,17 @@
+[
+  {
+    "image": "img/Shoppinglist2.png",
+    "link": "http://elreyatee.github.io/Shopping-List-Project",
+    "description": "<p>Shopping list application - users can add and subtract items from the shopping bag. Uses Google and Foursquare APIs, users type in their address and five nearby grocery stores appear with contact info.</p>"
+  },
+  {
+    "image": "img/quizapp.png",
+    "link": "http://elreyatee.github.io/Quiz_App",
+    "description": "<p>Comic book quiz application - users knowledge of the Marvel universe with questions and photos of heros and supervillains.</p>"
+  },
+  {
+    "image": "img/fizzbuzz.png",
+    "link": "http://elreyatee.github.io/Fizzbuzz",
+    "description": "<p>Popular fizzbuzz exercise coded in HTML, CSS, and Javascript.  Adds div elements to the page showing calculation results.</p>"
+  }
+]

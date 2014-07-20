@@ -1,0 +1,97 @@
+*:focus {
+	outline: 0;
+}
+
+body {
+	background-color: #fafafa;
+	color: #505050;
+}
+
+#header, #contact, nav {
+	background-image: url('../img/black_pattern04.jpg');
+	background-repeat: repeat-x;
+	color: #fff; 
+}
+
+#header h1, .icon, #contact h2 {
+	color: #fff;
+}
+
+#header i {
+	display: inline-block;
+	float: right;
+}
+
+nav {
+	display: none;
+	position: absolute;
+	left: 0;
+	right: 75%;
+}
+
+#about {
+	background-color: #ff3300;
+	padding-top: 400px;
+	padding-bottom: 20px;
+	color: #fff;
+}
+
+#portfolio {
+	text-align: center;
+}
+
+.icon:hover, a:hover {
+	color: #99FF33;
+}
+
+svg {
+	fill: currentColor;
+}
+
+#wrap {
+	position: relative;
+	margin: 2.5% auto;
+	cursor: pointer;
+	height: 400px;
+	width: 600px;
+	border: 2px solid #fafafa;
+}
+
+#wrap a {
+	display: block;
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 100%;
+	height: 100%;
+}
+
+a {
+	text-decoration: none;
+	color: #fff;
+}
+
+li {
+	list-style: none;
+}
+
+p {
+	text-align: justify;
+}
+
+#contact ul {
+	text-align: center;
+}
+
+#contact li {
+	display: inline-block;
+	margin: 5% 2%;
+}
+
+@media screen and (max-width: 640px) {
+	#wrap {
+		height: 300px;
+		width: 450px;
+	}
+
+}
+
