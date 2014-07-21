@@ -2,16 +2,36 @@
   {
     "image": "img/Shoppinglist2.png",
     "link": "http://elreyatee.github.io/Shopping-List-Project",
-    "description": "<p>Shopping list application - users can add and subtract items from the shopping bag. Uses Google and Foursquare APIs, users type in their address and five nearby grocery stores appear with contact info.</p>"
+    "description": "Shopping list - you can add and remove items from the shopping cart. Using Google and Foursquare APIs, the address bar searches for five nearby grocery stores and displays their contact info and distance."
   },
   {
     "image": "img/quizapp.png",
     "link": "http://elreyatee.github.io/Quiz_App",
-    "description": "<p>Comic book quiz application - users knowledge of the Marvel universe with questions and photos of heros and supervillains.</p>"
+    "description": "Comic book quiz - test your knowledge of the Marvel Universe's popular heros and supervillains!"
   },
   {
     "image": "img/fizzbuzz.png",
     "link": "http://elreyatee.github.io/Fizzbuzz",
-    "description": "<p>Popular fizzbuzz exercise coded in HTML, CSS, and Javascript.  Adds div elements to the page showing calculation results.</p>"
+    "description": "Popular fizzbuzz exercise coded in HTML, CSS, and Javascript.  Adds elements to the page showing calculation results."
+  },
+  {
+    "image": "img/stackajax.png",
+    "link": "http://elreyatee.github.io/stackerAJAX",
+    "description": "StackOverflow AJAX - this app was an exercise in studying AJAX, using the StackOverflow API to search unanswered questions and top answerers for a tag."
+  },
+  {
+    "image": "img/google.png",
+    "link": "http://elreyatee.github.io/Google-Clone",
+    "description": "Google Clone - this is a clone of the google search page, looks close to the original!" 
+  },
+  {
+    "image": "img/streetfighter.png",
+    "link": "http://elreyatee.github.io/jquery-streetfighter",
+    "description": "Street Fighter Game - follow the directions to make Ryu shoot a fireball and pose!"
+  },
+  {
+    "image": "img/hotncold.png",
+    "link": "http://elreyatee.github.io/hot-or-cold-starter",
+    "description": "Hot & Cold Game - enter a number and continue to guess the random generated answer; using an existing template, the entire game was coded in Javascript." 
   }
 ]

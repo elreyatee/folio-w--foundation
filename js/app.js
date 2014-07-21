@@ -3,12 +3,13 @@ var $wrap = $('#wrap');
 var index = 0;
 var $menu = $('#header span');
 var $nav = $('nav');
+var p;
 
 new WOW().init();
 
 var loadPortfolio = function() {
 	$.getJSON('json/portfolio.json', function(data){
-		console.log('success', data.length, index); 
+		//console.log('success', data.length, index); 
 		if(index > data.length-1) {
 			index = 0;
 		}
@@ -16,6 +17,7 @@ var loadPortfolio = function() {
 			$(this).removeClass();
 		});
 		$('#wrap a:first-child').attr('href', data[index].link).css({"background-image":"url('" + data[index].image + "')"});
+		$('#wrap p').text(data[index].description);
 	});
 };
 
@@ -51,6 +53,14 @@ $('nav a').on('click', function(e){
 	e.preventDefault();
 	$nav.slideUp('slow');
 	$('html').css({'overflow':'scroll'});
+});
+
+$wrap.hover(function() {
+	$(this).children('p').css({'display':'none'}).slideDown('fast');
+	$(this).children('a').css({'opacity': '0.6'});
+}, function() {
+	$(this).children('p').css({'display':'block'}).slideUp('fast');
+	$(this).children('a').css({'opacity': '1.0'});
 });
 
 

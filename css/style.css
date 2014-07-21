@@ -11,6 +11,12 @@
 body {
 	background-color: #fafafa;
 	color: #505050;
+	font-family: 'Kreon', serif;
+}
+
+html, html a {
+    -webkit-font-smoothing: antialiased;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
 }
 
 #header {
@@ -35,6 +41,10 @@ body {
 	display: none;
 }
 
+#header p {
+	font-size: 24px;
+}
+
 #nav {
 	text-align: center;
 	font-size: 20px;
@@ -53,15 +63,23 @@ nav {
 
 #about {
 	background-color: #00CCFF;
-	padding: 400px 20px 20px 20px;
+	/*background: url('../img/code.png');
+	background-size: contain;*/
+	padding: 20px;
 	color: #fff;
-	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.75);
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
+	text-align: center;
 }
 
 #about p {
 	text-align: justify;
 	font-size: 24px;
-	font-family: 'Chewy', cursive;
+}
+
+#about img {
+	display: inline-block;
+	border: 5px solid white;
+	margin-bottom: 10px;
 }
 
 .fa-lightbulb-o:before, .fa-compass:before, .fa-tachometer:before {
@@ -97,6 +115,24 @@ svg {
 	height: 100%;
 }
 
+#wrap p {
+	display: none;
+	position: absolute;
+	left: 0;
+	right: 0.5%;
+	top: 50%;
+	height: 50%;
+	padding: 15px;
+	text-align: justify;
+	color: #fff;
+	line-height: 22px;
+	font-size: 20px;
+	font-weight: bold;
+	background-color: rgba(0,0,0,0.7);
+	background-size: cover;
+	text-shadow: 1px 1px 1px rgba(1, 1, 1, 1);
+}
+
 a {
 	text-decoration: none;
 	color: #fff;
@@ -125,29 +161,126 @@ li {
 }
 
 #services li {
-	font-family: 'Chewy', cursive;
 	border: 3px solid #505050;
-	border-radius: 10px;
 	padding: 20px;
 	background-color: #FFFFEC;
 	height: 375px;
+	box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.8);
 }
+
+#services p {
+	font-size: 18px;
+	font-weight: 700;
+}
+
+
 
 @media screen and (max-width: 640px) {
 
+	html {
+		width: 640px;
+	}
+	#header {
+		padding: 2%;
+	}
+	#header p {
+		font-size: 20px;
+	}
+	.fa-navicon:before {
+		font-size: 50px;
+	}
+	#about {
+		padding-top: 150px;
+	}
+	#about p {
+		font-size: 18px;
+	}
 	#wrap {
 		height: 300px;
 		width: 450px;
 	}
-
 	#nav {
 		display: none;
 	}
-
 	#header i {
 		display: inline-block;
 		float: right;
 	}
+	.fa-lightbulb-o:before, .fa-compass:before, .fa-tachometer:before {
+		font-size: 100px;
+	}
+	#services {
+		padding: 10px 0px;
+	}
+	#services li {
+		padding: 10px;
+		margin: 30px auto;
+		height: 250px;
+		width: 350px;
+		font-size: 20px;
+	}
+	#services li:last-child {
+		margin-bottom: 0;
+	}
+	#contact .icon {
+		font-size: 35px;
+	}
+	#contact {
+		padding-bottom: 0;
+	}
+}
 
+@media screen and (min-width: 640px) and (max-width: 768px) {
+
+	.fa-lightbulb-o:before, .fa-compass:before, .fa-tachometer:before {
+		font-size: 125px;
+	}
+	#services {
+		padding: 10px 50px;
+	}
+	#services li {
+		padding: 10px;
+		margin: 30px auto;
+		height: 300px;
+		width: 350px;
+		font-size: 20px;
+	}
+	#services li:last-child {
+		margin-bottom: 0;
+	}
+	#services p {
+		font-size: 18px;
+		font-weight: 700;
+	}
+	#wrap {
+		height: 300px;
+		width: 450px;
+	}
+	#contact .icon {
+		font-size: 35px;
+	}
+	#contact {
+		padding-bottom: 0;
+	}
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+
+	#nav {
+		font-size: 24px;
+	}
+	#services {
+		padding: 10px 50px;
+	}
+	#services li {
+		padding: 10px;
+		margin: 30px auto;
+		height: 300px;
+		width: 500px;
+		font-size: 20px;
+	}
+	#services li:last-child {
+		margin-bottom: 0;
+	}
 }
 
