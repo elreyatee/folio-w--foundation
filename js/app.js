@@ -53,15 +53,6 @@ $('nav a').on('click', function(e){
 	$('html').css({'overflow':'scroll'});
 });
 
-$(window).resize(function() {
-	if($('#contact').css('z-index') == '0') {
-		$('#contact i').removeClass('fa-3x').addClass('fa-2x');
-		console.log('smaller');
-	} else {
-		$('#contact i').removeClass('fa-1x').addClass('fa-3x');
-		console.log('bigger');
-	}
-});
 
 
 

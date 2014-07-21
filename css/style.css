@@ -1,10 +1,20 @@
-*:focus {
-	outline: 0;
+@font-face {
+	font-family: 'Nevis';
+	src: url('../nevis.ttf');
+}
+
+@font-face {
+	font-family: 'Sosa';
+	src: url('../sosa-regular-webfont.ttf');
 }
 
 body {
 	background-color: #fafafa;
 	color: #505050;
+}
+
+#header {
+	padding: 5%;
 }
 
 #header, #contact, nav {
@@ -13,13 +23,25 @@ body {
 	color: #fff; 
 }
 
+#header h1, #header p, button, #contact h2, nav, #nav{
+	font-family: 'Nevis', sans-serif;
+}
+
 #header h1, .icon, #contact h2 {
 	color: #fff;
 }
 
 #header i {
-	display: inline-block;
-	float: right;
+	display: none;
+}
+
+#nav {
+	text-align: center;
+	font-size: 20px;
+	background-image: url('../img/black_pattern04.jpg');
+	background-repeat: repeat-x;
+	padding: 15px;
+	border-top: 1px solid white;
 }
 
 nav {
@@ -30,10 +52,20 @@ nav {
 }
 
 #about {
-	background-color: #ff3300;
-	padding-top: 400px;
-	padding-bottom: 20px;
+	background-color: #00CCFF;
+	padding: 400px 20px 20px 20px;
 	color: #fff;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.75);
+}
+
+#about p {
+	text-align: justify;
+	font-size: 24px;
+	font-family: 'Chewy', cursive;
+}
+
+.fa-lightbulb-o:before, .fa-compass:before, .fa-tachometer:before {
+	font-size: 150px;
 }
 
 #portfolio {
@@ -74,23 +106,47 @@ li {
 	list-style: none;
 }
 
-p {
-	text-align: justify;
+#contact {
+	padding: 10px;
+	line-height: 24px;
 }
 
-#contact ul {
+#contact ul, #services{
 	text-align: center;
 }
 
 #contact li {
 	display: inline-block;
-	margin: 5% 2%;
+	margin: 2% 2% 0 2%;
+}
+
+#services {
+	padding: 50px 0;
+}
+
+#services li {
+	font-family: 'Chewy', cursive;
+	border: 3px solid #505050;
+	border-radius: 10px;
+	padding: 20px;
+	background-color: #FFFFEC;
+	height: 375px;
 }
 
 @media screen and (max-width: 640px) {
+
 	#wrap {
 		height: 300px;
 		width: 450px;
+	}
+
+	#nav {
+		display: none;
+	}
+
+	#header i {
+		display: inline-block;
+		float: right;
 	}
 
 }
