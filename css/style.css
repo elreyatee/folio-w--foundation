@@ -173,13 +173,79 @@ li {
 	font-weight: 700;
 }
 
-
-
-@media screen and (max-width: 640px) {
-
+@media screen and (min-width: 320px) and (max-width: 439px) {
 	html {
-		width: 640px;
+		min-width: 320px;
 	}
+	#header {
+		padding: 1%;
+	}
+	#header h1 {
+		font-size: 24px;
+	}
+	#header p {
+		font-size: 16px;
+	}
+	#nav {
+		display: none;
+	}
+	#header i {
+		display: inline-block;
+		float: right;
+	}
+	#about p {
+		font-size: 18px;
+	}
+	#about img {
+		width: 75%;
+	}
+	nav {
+		z-index: 5;
+		right: 60%;
+	}
+	.fa-lightbulb-o:before, .fa-compass:before, .fa-tachometer:before {
+		font-size: 75px;
+	}
+	#services {
+		padding: 10px 0px;
+	}
+	#services li {
+		padding: 5px;
+		margin: 15px auto;
+		height: 225px;
+		width: 300px;
+		font-size: 16px;
+	}
+	#services li:last-child {
+		margin-bottom: 0;
+	}
+	#services p {
+		font-size: 16px;
+		font-weight: 700;
+	}
+	#wrap {
+		height: 200px;
+		width: 300px;
+	}
+	#wrap p {
+		left: 0;
+		right: 0.5%;
+		top: 0;
+		height: 100%;
+		padding: 10px;
+		line-height: 20px;
+		font-size: 16px;
+	}
+	#contact h2 {
+		font-size: 24px;
+	}
+	#contact .icon {
+		font-size: 30px;
+	}
+}
+
+@media screen and (min-width: 440px) and (max-width: 640px) {
+
 	#header {
 		padding: 2%;
 	}
@@ -190,10 +256,13 @@ li {
 		font-size: 50px;
 	}
 	#about {
-		padding-top: 150px;
+		padding-top: 20px;
 	}
 	#about p {
 		font-size: 18px;
+	}
+	#about img {
+		width: 50%;
 	}
 	#wrap {
 		height: 300px;
